@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('img.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        @font-face {
+            font-family: 'Integral CF Medium';
+            src: url('IntegralCF-Medium.woff2') format('woff2'),
+                url('IntegralCF-Medium.woff') format('woff'),
+                url('IntegralCF-Medium.ttf') format('truetype');
+        }
+        #container {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            */
+            border: 2px solid black;
+            position: fixed;
+            top: calc(50% - calc(500px / 2));
+            left: calc(50% - calc(800px / 2));
+            opacity: 0.95;
+            border-radius: 30px;
+            height: 500px;
+            width: 800px;
+            background-image: url('profile.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #233263;
+        }
+        #avatar {
+            border-radius: 140px;
+            position: absolute;
+            border: 2px solid black;
+            top: 15px;
+            left: 15px;
+        }
+        #name {
+            font-family: 'Integral CF Medium';
+            text-shadow: -0.5px -0.5px 0 #FFF, 0.8px -0.8px 0 #FFF, -0.5px 0.5px 0 #FFF, 0.5px 0.5px 0 #FFF;
+            top: 31px;
+            left: 370px;
+            position: absolute;
+            font-size: 70px;
+        }
+        #discord {
+            position: absolute;
+            top: 400px;
+            left: 300px;
+            font-family: 'Integral CF Medium';
+            font-size: 30px;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            text-shadow: -0.5px -0.5px 0 #000, 0.8px -0.8px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id = "name">Ink.1337</h1>
+        <h3>Status</h3>
+        <img src="https://cdn.discordapp.com/avatars/932881116006875266/a4a9a6de98934407419b980e202d1fb6.webp?size=4096" id="avatar">
+        <a href="https://discord.com/users/932881116006875266" target="_blank">
+            <button id="discord">Discord</button>
+        </a>
+    </div>
+</body>
+</html>
